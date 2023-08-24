@@ -36,3 +36,9 @@ models:
     # Config indicated by + and applies to all files under models/example/
     example:
       +materialized: view
+      +schema: custom_schema_name
+vars:
+    # Override default schema with custom schema name
+    custom_schema_override: false
+
+
