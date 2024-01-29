@@ -37,5 +37,15 @@ models:
     example:
       +materialized: view
       +schema: custom_schema_name
+    anonymize:
+      +materialized: table
+      +schema: ano_custom_schema_name
 
 
+vars:
+  databases:
+    test: 'db1'
+  anonymize:
+    - id
+  nullify:
+    - id2

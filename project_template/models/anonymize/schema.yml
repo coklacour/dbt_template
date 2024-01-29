@@ -1,0 +1,10 @@
+
+version: 2
+
+models:
+  - name: my_first_dbt_model_anonymize
+    description: "A starter dbt model"
+    tests:
+      - resolution:
+          combination_of_columns:
+            - id
