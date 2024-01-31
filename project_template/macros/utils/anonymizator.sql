@@ -9,8 +9,9 @@
     SELECT column_name, data_type
     FROM {{ database }}.INFORMATION_SCHEMA.columns
     WHERE 
-        LOWER(table_name) = '{{ table_name | lower }}' AND
-        data_type <> 'timestamp'
+        LOWER(table_name) = '{{ table_name | lower }}' 
+        AND LOWER(table_schema) = '{{ schema | lower }}' 
+        AND data_type <> 'timestamp'
 {%- endcall -%}
 {%- set column_names = load_result('cols') -%}
 
