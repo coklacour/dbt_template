@@ -1,0 +1,13 @@
+project_template:
+  target: dev
+  outputs:
+    dev:
+      type: sqlserver
+      driver: 'ODBC Driver 17 for SQL Server'
+      server: ReplaceMe
+      port: ReplaceMe
+      trust_cert: True
+      database: ReplaceMe
+      schema: ReplaceMe
+      user: ReplaceMe
+      password: ReplaceMe

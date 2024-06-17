@@ -1,0 +1,4 @@
+#!/bin/bash
+cd /src/project_template
+# Exécute la commande dbt run
+poetry run dbt run
